@@ -1,0 +1,1 @@
+ EXISTS ( SELECT 1 FROM  (SELECT UID_Person FROM Person WHERE  EXISTS ( SELECT 1 FROM  (SELECT UID_Person FROM Person WHERE 1 = 1) as X  WHERE X.UID_Person = Person.UID_PersonHead  ) ) as X  WHERE X.UID_Person = PersonWantsOrg.UID_PersonOrdered  )
